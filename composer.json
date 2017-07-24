@@ -1,0 +1,25 @@
+{
+    "name": "zipline/egestor-sdk",
+    "description": "Sdk para acesso da API do eGestor",
+    "type": "library",
+    "require": {
+        "php": ">=5.5.9",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zipline",
+            "email": "dev@zipline.com.br"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+          "Zipline\\eGestor\\": "src/"
+      }
+  },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "mockery/mockery": "^0.9.9"
+    }
+}
