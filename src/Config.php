@@ -11,7 +11,7 @@ use GuzzleHttp\Exception\ClientException;
 class Config {
 
   const VERSION = 'v1';
-  public static $API_URI = 'http://192.168.10.254/felipe/newgestor/api/';
+  public static $API_URI = 'https://v4.egestor.com.br/api/';
 
   public static function getApiUri() {
       return self::$API_URI . self::VERSION . '/';
