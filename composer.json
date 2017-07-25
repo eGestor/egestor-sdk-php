@@ -3,7 +3,7 @@
     "description": "Sdk para acesso da API do eGestor",
     "type": "library",
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=5.5",
         "guzzlehttp/guzzle": "^6.2"
     },
     "license": "MIT",
