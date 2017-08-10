@@ -33,7 +33,7 @@ O usuário será redirecionado para a url da sua aplicação com o parâmetro `c
 ```php
 $code = $_GET['code'];
 
-$api = new API([
+$api = new Zipline\eGestor\API([
   'clientId' => 'id_da_aplicacao',
   'clientSecret' => 'segredo',
   'redirectUri' => 'uri_cadastrada'
@@ -140,14 +140,14 @@ $api = new Zipline\eGestor\API(['personalToken' => PERSONAL_TOKEN)]);
 
 //Novo contato
 $contato = $api->post("contatos", [
-    'name' => 'Zipline',
+    'nome' => 'Zipline',
     'tipo' => ['fornecedor']
 ]);
 $codContato = $contato['codigo'];
 
 //Editando
 $response = $api->put("contatos/$codContato", [
-    'name' => 'eGestor',
+    'nome' => 'eGestor',
 ]);
 
 //Removendo
@@ -162,7 +162,7 @@ $response = $api->get("contatos", [
 ```php
 require 'vendor/autoload.php';
 try {
-  $api = new Zipline\eGestor\API(['personalToken' => PERSONAL_TOKEN)]);
+  $api = new Zipline\eGestor\API(['personalToken' => PERSONAL_TOKEN]);
 
   $contatos = $api->get("contatos");
 
