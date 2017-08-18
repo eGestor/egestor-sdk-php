@@ -68,7 +68,7 @@ O `personalToken` identifica sua aplicação com o usuário do eGestor.
 
 ```php
 
-$api = new Zipline\eGestor\API(['personalToken' => PERSONAL_TOKEN)]);
+$api = new Zipline\eGestor\API(['personalToken' => PERSONAL_TOKEN]);
 
 ```
 
@@ -82,7 +82,7 @@ Sempre que possível o retorno será em formato `Array`.
 ```php
 require 'vendor/autoload.php';
 
-$api = new Zipline\eGestor\API(['personalToken' => PERSONAL_TOKEN)]);
+$api = new Zipline\eGestor\API(['personalToken' => PERSONAL_TOKEN]);
 
 $contatos = $api->get('contatos');
 var_dump($contatos);
@@ -136,7 +136,7 @@ Exemplos:
 ```php
 require 'vendor/autoload.php';
 
-$api = new Zipline\eGestor\API(['personalToken' => PERSONAL_TOKEN)]);
+$api = new Zipline\eGestor\API(['personalToken' => PERSONAL_TOKEN]);
 
 //Novo contato
 $contato = $api->post("contatos", [
